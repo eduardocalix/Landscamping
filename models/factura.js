@@ -18,7 +18,7 @@ const Factura = db.define('factura', {
     subTotal : {
         type: Sequelize.FLOAT
     },
-    isv : {
+    saldo : {
         type: Sequelize.FLOAT
     },
     estado: {

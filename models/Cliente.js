@@ -14,7 +14,7 @@ const Cliente = db.define('cliente', {
         allowNull : false,
         validate: {
             notEmpty: {
-                msg: 'Porfavor introduzca un correo electronico!'
+                msg: 'Please insert firts name!'
             }
         }
     },
@@ -23,7 +23,7 @@ const Cliente = db.define('cliente', {
         allowNull: false,
         validate : {
             notEmpty: {
-                msg: 'Porfavor introduzca un correo electronico!'
+                msg: 'Please insert your nick name!'
             }
         }
     },
@@ -32,7 +32,7 @@ const Cliente = db.define('cliente', {
         allowNull: true,
         validate : {
             notEmpty: {
-                msg: 'Porfavor introduzca un correo electronico!'
+                msg: 'Please insert your phone number'
             }
         }
     },
@@ -41,7 +41,7 @@ const Cliente = db.define('cliente', {
         allowNull: true,
         validate : {
             notEmpty: {
-                msg: 'Porfavor introduzca un correo electronico!'
+                msg: 'Please insert your Address!'
             }
         }
     },
@@ -50,7 +50,12 @@ const Cliente = db.define('cliente', {
         allowNull: false,
         unique: {
             args: true,
-            msg: 'Este nombre de usuario ya existe'
+            msg: 'This user already exist'
+        },
+        validate : {
+            notEmpty: {
+                msg: 'Please insert your Email!'
+            }
         }
     },
 

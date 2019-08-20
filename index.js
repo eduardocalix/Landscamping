@@ -2,8 +2,8 @@
 const express = require('express');
 // Importar las rutas disponibles
 //const routes = require('./routes');
-let userRoutes = require('./routes/user');
-let carritoRoutes = require('./routes/carrito');
+//let userRoutes = require('./routes/user');
+//let carritoRoutes = require('./routes/carrito');
 // Importar los módulos para direcciones (path)
 const path = require('path');
 // Importar los módulos para utilizar body parser
@@ -16,7 +16,7 @@ const session = require("express-session")
 var SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 const flash = require("connect-flash");
-const facturaRoute = require("./routes/factura")
+//const facturaRoute = require("./routes/factura")
 
 
 // Crear la conexión con la Base de Datos
